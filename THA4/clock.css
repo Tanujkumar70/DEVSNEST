@@ -1,0 +1,84 @@
+html{
+
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    font-size: 2rem;
+    display: flex;
+    flex:1;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock{
+    width:30rem;
+    height: 30rem;
+    border:10px dotted black;
+    border-style:50%;
+    border-radius:10px;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+ } 
+.clock-face{
+    position:relative;
+    background:;
+    border-radius:10px;
+	width: 100%; 
+    height: 100%;
+    transform: translateY(-3px);
+	border-style:5px solid;
+     background-image:url("clock.JPG");
+}
+ 
+span{
+	content:"";
+	display:block;
+	position:absolute;
+	top:204px;
+	left:216px;
+	transform:translate(-50px,-50px);
+	width:14px;
+	height:14px;
+	background:gray;
+	border-radius:20px;
+	z-index:1;
+	
+}
+.hand{ 
+    width: 50%;
+    height: 4px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(125deg);
+    transition: all 0.05sec;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+.hour-hand{
+    width: 50%;
+    height: 4px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(50deg);
+    transition: all 0.05sec;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+
+}
+.min-hand{
+
+    width: 50%;
+    height: 4px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(130deg);
+    transition: all 0.05sec;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+
+}
