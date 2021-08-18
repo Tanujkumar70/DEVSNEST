@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* hello */
+
+.container {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: greenyellow;
+  max-width: 400px;
+  max-height: 400px;
+  width: 400px;
+  height: 400px;
+  overflow-y: scroll;
+}
+.App {
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* styling ther card */
+.card {
+  height: 100px;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  background-color: rgb(5, 170, 162);
+  margin: auto;
+  margin-top: 8px;
+}
+
+.tt {
+  color: lightcoral;
+  text-align: center;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  margin-left: auto;
+  color: royalblue;
+}
+
+.no {
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 400px;
+  width: 400px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTYdMWP0xCVtscBpfFysXPivS9UxS3MQ6XJQ&usqp=CAU);
+}
